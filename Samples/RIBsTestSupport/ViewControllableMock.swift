@@ -1,5 +1,5 @@
 import Foundation
-import ModernRIBs
+import RIBs
 import UIKit
 
 public final class ViewControllableMock: UIViewController, ViewControllable {

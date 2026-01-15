@@ -1,5 +1,5 @@
 import Foundation
-import ModernRIBs
+import RIBs
 import Combine
 
 open class ViewableRoutingMock: ViewableRouting {

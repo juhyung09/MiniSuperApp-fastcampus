@@ -1,4 +1,4 @@
-import ModernRIBs
+import RIBs
 
 protocol FinanceHomeInteractable: Interactable {
   var router: FinanceHomeRouting? { get set }
