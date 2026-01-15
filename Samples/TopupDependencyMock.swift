@@ -5,7 +5,7 @@ import FinanceEntity
 import FinanceRepositoryTestSupport
 import FinanceRepository
 import Combine
-import ModernRIBs
+import RIBs
 import RIBsUtil
 import Topup
 import SuperUI

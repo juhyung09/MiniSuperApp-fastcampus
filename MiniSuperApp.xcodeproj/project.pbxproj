@@ -19,10 +19,11 @@
 		F57F6AF226DB4A2D00C0117D /* ProfileHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AEE26DB4A2D00C0117D /* ProfileHomeBuilder.swift */; };
 		F57F6AF326DB4A2D00C0117D /* ProfileHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AEF26DB4A2D00C0117D /* ProfileHomeInteractor.swift */; };
 		F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */; };
+		25919AF39E1BB0EB9CDAB97B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98666083051B31002B08D6F /* SplashViewController.swift */; };
 		F5829F5926DB2BC400BFA8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F5826DB2BC400BFA8CD /* AppDelegate.swift */; };
 		F5829F6226DB2BC500BFA8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5829F6126DB2BC500BFA8CD /* Assets.xcassets */; };
 		F5829F6526DB2BC500BFA8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5829F6326DB2BC500BFA8CD /* LaunchScreen.storyboard */; };
-		F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = F5829F6D26DB2DE900BFA8CD /* ModernRIBs */; };
+		F5829F6E26DB2DE900BFA8CD /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = F5829F6D26DB2DE900BFA8CD /* RIBs */; };
 		F5829F7426DB34AA00BFA8CD /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7026DB34AA00BFA8CD /* AppRootRouter.swift */; };
 		F5829F7626DB34AA00BFA8CD /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7226DB34AA00BFA8CD /* AppRootBuilder.swift */; };
 		F5829F7726DB34AA00BFA8CD /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7326DB34AA00BFA8CD /* AppRootInteractor.swift */; };
@@ -59,6 +60,7 @@
 		F57F6AEE26DB4A2D00C0117D /* ProfileHomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeBuilder.swift; sourceTree = "<group>"; };
 		F57F6AEF26DB4A2D00C0117D /* ProfileHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeInteractor.swift; sourceTree = "<group>"; };
 		F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		D98666083051B31002B08D6F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F5829F5526DB2BC400BFA8CD /* MiniSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5829F5826DB2BC400BFA8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5829F6126DB2BC500BFA8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */,
+				F5829F6E26DB2DE900BFA8CD /* RIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +191,7 @@
 				F5829F7226DB34AA00BFA8CD /* AppRootBuilder.swift */,
 				F5829F7326DB34AA00BFA8CD /* AppRootInteractor.swift */,
 				F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */,
+				D98666083051B31002B08D6F /* SplashViewController.swift */,
 			);
 			path = AppRoot;
 			sourceTree = "<group>";
@@ -248,7 +251,7 @@
 			);
 			name = MiniSuperApp;
 			packageProductDependencies = (
-				F5829F6D26DB2DE900BFA8CD /* ModernRIBs */,
+				F5829F6D26DB2DE900BFA8CD /* RIBs */,
 			);
 			productName = SuperRedApp;
 			productReference = F5829F5526DB2BC400BFA8CD /* MiniSuperApp.app */;
@@ -278,7 +281,7 @@
 			);
 			mainGroup = F5829F4C26DB2BC400BFA8CD;
 			packageReferences = (
-				F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */,
+				F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "RIBs" */,
 			);
 			productRefGroup = F5829F5626DB2BC400BFA8CD /* Products */;
 			projectDirPath = "";
@@ -328,6 +331,7 @@
 				F5EAA22D270B3A4500EF2B70 /* RideTypeView.swift in Sources */,
 				F5EAA219270B395900EF2B70 /* HomeWidgetView.swift in Sources */,
 				F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */,
+				25919AF39E1BB0EB9CDAB97B /* SplashViewController.swift in Sources */,
 				F57F6AEB26DB4A2700C0117D /* FinanceHomeInteractor.swift in Sources */,
 				F5EAA21B270B395900EF2B70 /* AppHomeInteractor.swift in Sources */,
 				F57F6AE826DB4A2700C0117D /* FinanceHomeRouter.swift in Sources */,
@@ -533,21 +537,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */ = {
+		F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "RIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/DevYeom/ModernRIBs";
+			repositoryURL = "https://github.com/uber/RIBs";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F5829F6D26DB2DE900BFA8CD /* ModernRIBs */ = {
+		F5829F6D26DB2DE900BFA8CD /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */;
-			productName = ModernRIBs;
+			package = F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "RIBs" */;
+			productName = RIBs;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

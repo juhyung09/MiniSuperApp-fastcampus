@@ -1,5 +1,5 @@
 import Foundation
-import ModernRIBs
+import RIBs
 import Combine
 
 public final class RoutingMock: Routing {

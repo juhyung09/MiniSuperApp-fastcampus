@@ -1,5 +1,5 @@
 import Foundation
-import ModernRIBs
+import RIBs
 
 protocol AppRootRouting: ViewableRouting {
   func attachTabs()
@@ -8,6 +8,8 @@ protocol AppRootRouting: ViewableRouting {
 protocol AppRootPresentable: Presentable {
   var listener: AppRootPresentableListener? { get set }
   // TODO: Declare methods the interactor can invoke the presenter to present data.
+  func showSplash()
+  func hideSplash()
 }
 
 protocol AppRootListener: AnyObject {
@@ -28,8 +30,14 @@ final class AppRootInteractor: PresentableInteractor<AppRootPresentable>, AppRoo
   
   override func didBecomeActive() {
     super.didBecomeActive()
-    
-    router?.attachTabs()
+
+    presenter.showSplash()
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+      guard let self else { return }
+      self.router?.attachTabs()
+      self.presenter.hideSplash()
+    }
   }
   
   override func willResignActive() {
